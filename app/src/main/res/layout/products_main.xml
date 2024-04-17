@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/products"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/crumblyproducts"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_background_grey"
+        app:layout_constraintBottom_toTopOf="@+id/butteryproducts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/liquidproducts">
+
+        <TextView
+            android:id="@+id/textViewCrumbly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/crumbly_products"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewSugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/sugar"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewSugar"
+            app:layout_constraintStart_toStartOf="@+id/imageViewSugar"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewSugar"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textViewSalt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/salt"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewSalt"
+            app:layout_constraintStart_toStartOf="@+id/imageViewSalt"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewSalt"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageViewSugar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewSalt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCrumbly"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/sugar_icon" />
+
+        <ImageView
+            android:id="@+id/imageViewSalt"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCrumbly"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/salt_icon" />
+
+        <ImageView
+            android:id="@+id/nextButtonCrumble"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="27dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewSalt"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCrumbly"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/nextbutton"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/liquidproducts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:padding="10dp"
+        android:background="@drawable/rounded_background_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062">
+
+        <TextView
+            android:id="@+id/textViewLiquid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/liquid_products"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/product"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewProduct"
+            app:layout_constraintStart_toStartOf="@+id/imageViewProduct"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewProduct" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/milk"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewMilk"
+            app:layout_constraintStart_toStartOf="@+id/imageViewMilk"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewMilk"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imageViewProduct"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewMilk"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLiquid"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/water_icon" />
+
+        <ImageView
+            android:id="@+id/imageViewMilk"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLiquid"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/milk_icon" />
+
+        <ImageView
+            android:id="@+id/nextButtonLiquid"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="27dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewMilk"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLiquid"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/nextbutton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/butteryproducts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:padding="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_background_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crumblyproducts">
+
+        <TextView
+            android:id="@+id/textViewButterProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/oils"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewButter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="@string/butter"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewButter"
+            app:layout_constraintStart_toStartOf="@+id/imageViewButter"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewButter"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textViewVegetableOil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="@string/vegetable_oil"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewVegetableOil"
+            app:layout_constraintStart_toStartOf="@+id/imageViewVegetableOil"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewVegetableOil"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageViewVegetableOil"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewButter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewButterProduct"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/vegetable_oil_icon" />
+
+        <ImageView
+            android:id="@+id/imageViewButter"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewButterProduct"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/butter_icon" />
+
+        <ImageView
+            android:id="@+id/nextButtonButter"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="27dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewButter"
+            app:layout_constraintTop_toBottomOf="@+id/textViewButterProduct"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/nextbutton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

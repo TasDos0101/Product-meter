@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="quotations_array">
+        <item>@string/quotations1</item>
+        <item>@string/quotations2</item>
+        <item>@string/quotations3</item>
+        <item>@string/quotations4</item>
+        <item>@string/quotations5</item>
+        <item>@string/quotations6</item>
+        <item>@string/quotations7</item>
+        <item>@string/quotations8</item>
+        <item>@string/quotations9</item>
+    </string-array>
+</resources>
